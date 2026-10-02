@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蜀道·广元 三天两夜剑门关高铁路书</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23A63B2E'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23F7F3E9' font-family='serif'%3E%E8%9C%80%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F6F1E5;        /* 宣纸米白 */
+  --card:#FFFDF6;
+  --ink:#2B2923;          /* 墨色 */
+  --ink-soft:#5A564A;
+  --pine:#2F4A43;         /* 黛青主色 */
+  --pine-deep:#23382F;
+  --cinnabar:#A63B2E;     /* 朱砂强调 */
+  --gold:#B08D4C;         /* 印章金 */
+  --line:#E1D9C4;
+  --serif:"Noto Serif SC",Georgia,"Songti SC",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.75;font-size:16px}
+::selection{background:var(--cinnabar);color:#fff}
+
+/* 顶部导航 */
+nav{position:sticky;top:0;z-index:50;background:rgba(246,241,229,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 20px;flex-wrap:wrap}
+.nav-brand{font-family:var(--serif);font-weight:900;color:var(--cinnabar);letter-spacing:2px;margin-right:auto;font-size:16px}
+.nav-brand small{color:var(--pine);font-weight:600;letter-spacing:1px}
+nav a{text-decoration:none;color:var(--ink-soft);font-size:13px;padding:8px 10px;border-radius:4px;transition:.2s}
+nav a:hover{color:var(--cinnabar);background:rgba(166,59,46,.08)}
+
+/* 结构 */
+.shell{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:56px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.sec-no{font-family:var(--serif);font-weight:900;color:var(--cinnabar);font-size:14px;letter-spacing:2px;border:1.5px solid var(--cinnabar);border-radius:50%;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.sec-title{font-family:var(--serif);font-weight:900;font-size:26px;color:var(--pine-deep);letter-spacing:1px}
+.sec-sub{color:var(--ink-soft);font-size:13px;margin-left:auto}
+.divider{height:1px;background:linear-gradient(90deg,var(--line),transparent);max-width:1080px;margin:0 auto}
+
+/* Hero */
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,56,47,.05) 0%,rgba(35,56,47,.35) 55%,rgba(23,34,29,.86) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:1080px;margin:0 auto;width:100%;padding:0 20px 56px;color:#F7F1DF}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:3px;color:#E7D9A8;border:1px solid rgba(231,217,168,.5);padding:5px 14px;border-radius:3px;margin-bottom:20px;background:rgba(0,0,0,.15)}
+.hero-title{font-family:var(--serif);font-weight:900;font-size:clamp(38px,7vw,72px);line-height:1.12;letter-spacing:4px;margin-bottom:12px}
+.hero-title .dot{color:var(--gold)}
+.hero-sub{font-family:var(--serif);font-size:clamp(16px,2.6vw,24px);letter-spacing:6px;color:#EFE6C8;margin-bottom:34px}
+.hero-meta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-chip{background:rgba(246,241,229,.12);border:1px solid rgba(246,241,229,.35);padding:9px 16px;border-radius:6px;font-size:13px;color:#F3ECD6}
+.hero-chip b{font-family:var(--serif);color:#fff;font-size:15px;margin-right:6px}
+
+/* 卡片通用 */
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:0 1px 2px rgba(43,41,35,.04)}
+.card h3{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--pine-deep);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h3 .tick{width:6px;height:18px;background:var(--cinnabar);border-radius:2px;flex:none}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+
+/* 时间轴 */
+.tl{display:grid;grid-template-columns:76px 26px 1fr;gap:0 14px}
+.tl-time{text-align:right;padding:14px 0;font-family:var(--serif);font-weight:700;color:var(--cinnabar);font-size:15px}
+.tl-axis{position:relative;display:flex;justify-content:center}
+.tl-axis::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--line);box-sizing:border-box}
+.tl-node{position:relative;margin-top:22px;width:13px;height:13px;border-radius:50%;background:var(--card);border:3px solid var(--cinnabar);box-sizing:border-box;z-index:2}
+.tl-body{padding:10px 0 18px}
+.tl-body .what{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--pine-deep);margin-bottom:4px}
+.tl-body .desc{color:var(--ink-soft);font-size:14px}
+.tl-body .desc b{color:var(--ink)}
+
+/* 车次表 */
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:14px}
+.colgroup col:nth-child(1){width:22%}
+.colgroup col:nth-child(2){width:34%}
+.colgroup col:nth-child(3){width:16%}
+.colgroup col:nth-child(4){width:28%}
+thead th{background:var(--pine);color:#F1ECD9;padding:10px 8px;text-align:left;font-weight:600;font-size:13px}
+tbody td{padding:12px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+.tno{font-family:var(--serif);font-weight:700;color:var(--cinnabar)}
+.tag{display:inline-block;background:var(--cinnabar);color:#fff;font-size:11px;padding:2px 8px;border-radius:3px;margin-left:6px;vertical-align:middle}
+.tag.gold{background:var(--gold)}
+.tag.pine{background:var(--pine)}
+
+/* 图片题图 */
+.fig{border-radius:10px;overflow:hidden;border:1px solid var(--line);position:relative;margin-bottom:6px}
+.fig img{width:100%;display:block;object-fit:cover}
+.fig.land img{height:280px}
+.fig .cap{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(180deg,transparent,rgba(20,30,25,.72));color:#F3ECD6;padding:30px 16px 10px;font-size:12px;letter-spacing:1px}
+
+/* 预算条 */
+.budget{display:flex;flex-direction:column;gap:14px}
+.b-row{display:grid;grid-template-columns:130px 1fr 80px;align-items:center;gap:14px}
+.b-name{font-size:14px;color:var(--ink-soft)}
+.b-name b{color:var(--ink);font-weight:600}
+.b-track{height:14px;background:#EDE6D2;border-radius:7px;overflow:hidden}
+.b-fill{height:100%;border-radius:7px;background:linear-gradient(90deg,var(--pine),var(--pine-deep))}
+.b-fill.hot{background:linear-gradient(90deg,var(--cinnabar),#7E2C22)}
+.b-fill.gold{background:linear-gradient(90deg,var(--gold),#8C6C33)}
+.b-val{text-align:right;font-family:var(--serif);font-weight:700;font-size:15px}
+.b-val small{font-size:11px;color:var(--ink-soft);font-weight:400;margin-right:3px}
+
+/* 清单 */
+.check{display:flex;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:var(--card);margin-bottom:10px;align-items:flex-start}
+.check .flag{width:20px;height:20px;flex:none;margin-top:2px;border-radius:4px;background:var(--cinnabar);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+.check .txt b{color:var(--pine-deep);font-family:var(--serif)}
+.check .txt{font-size:14px;color:var(--ink-soft)}
+.check .txt .urgent{color:var(--cinnabar);font-weight:700}
+
+/* 天气条 */
+.weather{display:flex;gap:12px;flex-wrap:wrap}
+.w-chip{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;text-align:center}
+.w-chip .d{font-family:var(--serif);font-weight:700;color:var(--pine-deep);font-size:15px}
+.w-chip .w{font-size:13px;color:var(--ink-soft);margin:6px 0}
+.w-chip .t{font-size:17px;font-family:var(--serif);color:var(--cinnabar);font-weight:700}
+
+/* 画像徽标 */
+.profile{display:grid;gap:12px}
+.p-item{display:flex;gap:12px;align-items:center;border-bottom:1px dashed var(--line);padding:10px 0}
+.p-item:last-child{border-bottom:none}
+.p-ico{width:34px;height:34px;border-radius:50%;background:var(--pine);color:#F1ECD9;display:flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+.p-txt b{color:var(--pine-deep)}
+
+/* 章末寄语 */
+.epilogue{text-align:center;padding:64px 20px 20px;color:var(--ink-soft)}
+.epilogue .quote{font-family:var(--serif);font-size:22px;letter-spacing:3px;color:var(--pine-deep);margin-bottom:8px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 20px;text-align:center;color:var(--ink-soft);font-size:13px}
+footer .seal{display:inline-block;border:2px solid var(--cinnabar);color:var(--cinnabar);font-family:var(--serif);font-weight:900;padding:4px 10px;border-radius:4px;margin-bottom:10px;letter-spacing:2px}
+
+/* 移动端 */
+@media(max-width:720px){
+  section{padding:44px 0 4px}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .tl{grid-template-columns:58px 20px 1fr;gap:0 8px}
+  .tl-time{font-size:13px}
+  .tl-body .what{font-size:15px}
+  .sec-title{font-size:22px}
+  .hero{min-height:66vh}
+  .fig.land img{height:200px}
+  .b-row{grid-template-columns:96px 1fr 64px;gap:8px}
+  .b-name{font-size:13px}
+  .nav-inner{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;scrollbar-width:none}
+  .nav-inner::-webkit-scrollbar{display:none}
+  .nav-brand{flex:none}
+  nav a{font-size:12px;padding:0 10px;min-height:44px;display:inline-flex;align-items:center;flex:none}
+  table{font-size:13px}
+}
+@media(max-width:420px){
+  .tl{grid-template-columns:50px 16px 1fr;gap:0 6px}
+  .tl-time{font-size:12px}
+  .sec-no{width:32px;height:32px;font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand">蜀道 · 广元<small> 三天两夜</small></span>
+    <a href="#overview">总览</a>
+    <a href="#traffic">交通</a>
+    <a href="#day1">Day1</a>
+    <a href="#day2">Day2</a>
+    <a href="#day3">Day3</a>
+    <a href="#stay">住宿</a>
+    <a href="#food">美食</a>
+    <a href="#budget">预算</a>
+    <a href="#checklist">清单</a>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <img class="hero-bg" src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KsnLbdLWFod5UbxcIqmcutJ1nvh" alt="蜀道雄关水墨山景">
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <span class="hero-kicker">— 高 铁 · 山 河 · 蜀 道 路 书 —</span>
+    <h1 class="hero-title">三天两夜<span class="dot">·</span>剑门关</h1>
+    <div class="hero-sub">广元行 · 女皇故里 · 一夫当关</div>
+    <div class="hero-meta">
+      <span class="hero-chip"><b>10.03</b>广元市区 · 女皇故里</span>
+      <span class="hero-chip"><b>10.04</b>剑门关 · 猿猱道</span>
+      <span class="hero-chip"><b>10.05</b>逛吃 · 返程</span>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+
+<!-- ===== 一、路线总览 ===== -->
+<section id="overview">
+  <div class="sec-head">
+    <span class="sec-no">一</span>
+    <h2 class="sec-title">三天路线总览</h2>
+    <span class="sec-sub">2 人 · 25 岁情侣 · 舒适节奏 · 公共交通</span>
+  </div>
+  <div class="grid g3">
+    <div class="card"><h3><span class="tick"></span>Day 1 · 10.03</h3>
+      <p style="font-size:14px;color:var(--ink-soft)">高铁抵广元 → 南河酒店寄存 → 皇泽寺 · 千佛崖 · 嘉陵江夜</p>
+    </div>
+    <div class="card" style="border-color:var(--cinnabar)"><h3><span class="tick"></span>Day 2 · 10.04 <span class="tag">重头戏</span></h3>
+      <p style="font-size:14px;color:var(--ink-soft)">D1913 赴剑门关 → 猿猱道 · 玻璃观景台 · 关楼 → D1958 返广元</p>
+    </div>
+    <div class="card"><h3><span class="tick"></span>Day 3 · 10.05</h3>
+      <p style="font-size:14px;color:var(--ink-soft)">蒸凉面早餐 · 伴手礼 → 退房 → D1972 返洋县西</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 二、车次与交通 ===== -->
+<section id="traffic">
+  <div class="sec-head">
+    <span class="sec-no">二</span>
+    <h2 class="sec-title">车次与交通衔接</h2>
+    <span class="sec-sub">全部已购票 · 以实际运行时刻为准</span>
+  </div>
+  <div class="card" style="overflow-x:auto">
+    <table>
+      <colgroup class="colgroup"><col><col><col><col></colgroup>
+      <thead><tr><th>车次</th><th>区间 / 时刻</th><th>历时</th><th>衔接说明</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="tno">D1973 <span class="tag pine">去程</span></td>
+          <td>洋县西 10/03 <b>10:03</b> → 广元 <b>11:06</b></td>
+          <td>1h03m</td>
+          <td>到广元站打车约 10–16 分钟至南河酒店（¥10–15）</td>
+        </tr>
+        <tr>
+          <td class="tno">D1913 <span class="tag">Day2</span></td>
+          <td>广元 10/04 <b>10:05</b> → 剑门关 <b>10:18</b></td>
+          <td>13m</td>
+          <td>二楼 6 号检票口 · 到站后 7 路公交 / 打车进景区</td>
+        </tr>
+        <tr>
+          <td class="tno">D1958 <span class="tag">Day2</span></td>
+          <td>剑门关 10/04 <b>17:43</b> → 广元 <b>17:58</b></td>
+          <td>15m</td>
+          <td>兰州局 · <b>务必 16:00 前出景区</b>赶赴车站</td>
+        </tr>
+        <tr>
+          <td class="tno">D1972 <span class="tag gold">返程</span></td>
+          <td>广元 10/05 <b>12:44</b> → 洋县西 <b>13:54</b></td>
+          <td>1h10m</td>
+          <td>一楼 2 号检票口 · 12:00 前出发赴站</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px;color:var(--ink-soft);margin-top:10px">市内短途以公交 + 打车为主：酒店近南河汽车站（步行约 12 分钟），打车到皇泽寺 / 千佛崖约 10–20 分钟。</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== Day1 ===== -->
+<section id="day1">
+  <div class="sec-head">
+    <span class="sec-no">三</span>
+    <h2 class="sec-title">Day 1 · 10/03 · 广元市区与女皇故里</h2>
+    <span class="sec-sub">多云转阴 16~28℃</span>
+  </div>
+  <div class="fig land" style="margin-bottom:20px">
+    <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HWqybhMCGoYBF9xRsY5c5cBRnec" alt="嘉陵江夜色水墨">
+    <span class="cap">嘉陵江畔 · 广元夜色</span>
+  </div>
+  <div class="tl">
+    <div class="tl-time">11:06</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">抵达广元，入住南河</div><div class="desc">D1973 正点抵广元站，打车约 10–16 分钟到<b>由里尚雅智慧酒店（南河店）</b>寄存行李（14:00 后可入住）。</div></div>
+
+    <div class="tl-time">12:00</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">午餐 · 女皇蒸凉面</div><div class="desc">广元独有的早餐级名吃，人均 3.5–10 元。推荐<b>明君凉面 / 王凉面 / 张明富蒸凉面</b>，再配一碗热豆花。</div></div>
+
+    <div class="tl-time">14:00</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">皇泽寺 <span class="tag pine">¥50/人</span></div><div class="desc">全国唯一的<b>武则天祀庙</b>，依嘉陵江而建，观大佛楼与摩崖造像，游玩约 2 小时（8:00–18:00）。打车约 10–20 分钟。</div></div>
+
+    <div class="tl-time">16:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">千佛崖 <span class="tag pine">¥40/人</span></div><div class="desc">川北规模最大的<b>石窟群</b>，沿江壁凿龛，约 1.5 小时。两处景点一江之隔，可顺路串联。</div></div>
+
+    <div class="tl-time">18:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">嘉陵江夜 · 晚餐</div><div class="desc">沿南河 / 嘉陵江边散步看夜景，晚餐推荐<b>胡婆婆蘸水肥肠（利州店）</b>人均约 ¥40，或<b>辣子村土碗菜</b>人均约 ¥54。</div></div>
+  </div>
+</section>
+
+<!-- ===== Day2 ===== -->
+<section id="day2">
+  <div class="sec-head">
+    <span class="sec-no">四</span>
+    <h2 class="sec-title">Day 2 · 10/04 · 剑门关全天（含猿猱道）</h2>
+    <span class="sec-sub">阵雨转多云 14~27℃ · 山区防滑</span>
+  </div>
+  <div class="card" style="border-color:var(--cinnabar);background:#FBF3EA;margin-bottom:20px">
+    <h3 style="color:var(--cinnabar)"><span class="tick"></span>出发前必做 · 门票 + 猿猱道预约</h3>
+    <p style="font-size:14px;color:var(--ink-soft)"><b style="color:var(--cinnabar)">注意：</b><b style="color:var(--cinnabar)">10/3 门票（含猿猱道、鸟道）已售罄</b>，务必已在「剑门关旅游区 / 剑门关旅游度假区」公众号或「智游剑门」小程序预约 <b>10/4 门票</b>。<br>
+    猿猱道 ¥68/人（每日限 1200 人）、鸟道免费（每日限 6000 人），均需<b>单独预约</b>：每日 17:00 后约次日；雨天大风临时关闭。</p>
+  </div>
+  <div class="fig land" style="margin-bottom:20px">
+    <img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/B19Pbvp5Oo1kb2xG6excYdIunCc" alt="剑门关猿猱道水墨">
+    <span class="cap">一线猿猱道 · 绝壁悬空</span>
+  </div>
+  <div class="tl">
+    <div class="tl-time">10:05</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">D1913 赴剑门关</div><div class="desc">广元 10:05 开 → 10:18 抵剑门关站（二楼 6 号检票口）。出站坐<b>7 路公交 ¥6（约 20–40 分钟）</b>或打车（¥15–25，约 10–15 分钟）进景区。</div></div>
+
+    <div class="tl-time">10:45</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">1 号索道上山 <span class="tag pine">单程¥50</span></div><div class="desc">购票（<b>跨市高铁票可享 7 折，或背《蜀道难》免票</b>，均须实名预约+身份证核销），1 号索道上山至仙女廊。</div></div>
+
+    <div class="tl-time">11:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">猿猱道 <span class="tag">¥68/人</span></div><div class="desc">贴崖攀行的<b>蜀道精华</b>，需系安全绳。雨天可能临时关闭，关闭时改走免费<b>鸟道</b>。</div></div>
+
+    <div class="tl-time">12:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">玻璃观景台 <span class="tag pine">鞋套¥10</span></div><div class="desc">悬于绝壁的透明观景台，俯瞰剑门群山与"一线天"。随后登临<b>关楼</b>——"一夫当关，万夫莫开"的天下雄关。</div></div>
+
+    <div class="tl-time">13:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">午餐 · 剑门豆腐宴</div><div class="desc">景区附近品尝<b>怀胎豆腐 / 崩山豆腐 / 熊掌豆腐</b>，人均 35–80 元，推荐<b>六娃子豆腐 / 帅府大酒楼</b>。</div></div>
+
+    <div class="tl-time">15:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">下山出景区</div><div class="desc"><b style="color:var(--cinnabar)">务必 16:00 前离开景区</b>，公交 / 打车回剑门关站（景区 16:30 停售、约 17:00 闭园）。</div></div>
+
+    <div class="tl-time">17:43</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">D1958 返广元</div><div class="desc">剑门关 17:43 开 → 17:58 抵广元（兰州局）。晚餐<b>辣子村土碗菜</b>，为一天收尾。</div></div>
+  </div>
+</section>
+
+<!-- ===== Day3 ===== -->
+<section id="day3">
+  <div class="sec-head">
+    <span class="sec-no">五</span>
+    <h2 class="sec-title">Day 3 · 10/05 · 逛吃与返程</h2>
+    <span class="sec-sub">多云间晴 14~26℃</span>
+  </div>
+  <div class="tl">
+    <div class="tl-time">09:00</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">早餐 · 女皇蒸凉面</div><div class="desc">最后一顿广元味，再打包伴手礼：<b>剑门豆腐干 / 蒸凉面 / 女皇香肠</b>。</div></div>
+
+    <div class="tl-time">10:00</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">南河 / 嘉陵江边闲逛</div><div class="desc">节奏放缓，江边走走，或补逛附近街巷（如首日遗漏的千佛崖尾段）。</div></div>
+
+    <div class="tl-time">11:30</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">退房 · 赴广元站</div><div class="desc"><b>12:00 前退房离店</b>，打车约 10–16 分钟到广元站，留足检票时间（一楼 2 号检票口）。</div></div>
+
+    <div class="tl-time">12:44</div><div class="tl-axis"><span class="tl-node"></span></div>
+    <div class="tl-body"><div class="what">D1972 返程</div><div class="desc">广元 12:44 开 → <b>13:54 抵洋县西</b>（历时 1h10m），愉快回家。</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 六、住宿 ===== -->
+<section id="stay">
+  <div class="sec-head">
+    <span class="sec-no">六</span>
+    <h2 class="sec-title">住哪里</h2>
+    <span class="sec-sub">已订 · 无需再选</span>
+  </div>
+  <div class="grid g2">
+    <div class="card" style="border-color:var(--cinnabar)">
+      <h3><span class="tick"></span>由里尚雅 · 智慧酒店（广元南河店）<span class="tag">已订</span></h3>
+      <p style="font-size:14px;color:var(--ink-soft);margin-bottom:6px">广元市利州区南河街道广州路 200 号 · 2022 年开业</p>
+      <p style="font-size:14px;color:var(--ink-soft)">精选影院大床房（巨幕 100 寸 2K）1 间 · 1.8 米大床 · 18–20㎡ · 6–7 层 · 有窗 · 无餐食</p>
+    </div>
+    <div class="card">
+      <h3><span class="tick"></span>订单信息</h3>
+      <p style="font-size:14px;color:var(--ink-soft)"><b>10/03 14:00 后入住</b> · <b>10/05 12:00 前离店</b> · 共 2 晚<br>
+      在线付 <b style="color:var(--cinnabar);font-family:var(--serif)">¥611.02</b><br>
+      <span style="font-size:13px;color:var(--ink-soft)">入住当日 20:00 前可免费取消 · 订单号 104697735844</span></p>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--ink-soft);margin-top:12px">交通：距广元站约 3.7km，打车 10–16 分钟（约 ¥10–15）；近南河汽车站（步行约 12 分钟）；打车到皇泽寺 / 千佛崖约 10–20 分钟。</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 七、吃什么 ===== -->
+<section id="food">
+  <div class="sec-head">
+    <span class="sec-no">七</span>
+    <h2 class="sec-title">吃什么</h2>
+    <span class="sec-sub">无饮食忌口 · 放心尝</span>
+  </div>
+  <div class="grid g4">
+    <div class="card"><h3><span class="tick"></span>女皇蒸凉面</h3><p style="font-size:14px;color:var(--ink-soft)">广元独有 · 人均 3.5–10 元<br>推荐：明君凉面 / 王凉面 / 张明富蒸凉面</p></div>
+    <div class="card"><h3><span class="tick"></span>剑门豆腐宴</h3><p style="font-size:14px;color:var(--ink-soft)">怀胎 / 崩山 / 熊掌豆腐 · 人均 35–80 元<br>推荐：六娃子豆腐 / 帅府大酒楼</p></div>
+    <div class="card"><h3><span class="tick"></span>辣子村土碗菜</h3><p style="font-size:14px;color:var(--ink-soft)">本地土碗菜 · 人均约 ¥54</p></div>
+    <div class="card"><h3><span class="tick"></span>胡婆婆蘸水肥肠</h3><p style="font-size:14px;color:var(--ink-soft)">利州店 · 人均约 ¥40<br>伴手礼：剑门豆腐干 / 蒸凉面 / 女皇香肠</p></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 八、预算 ===== -->
+<section id="budget">
+  <div class="sec-head">
+    <span class="sec-no">八</span>
+    <h2 class="sec-title">预算（2 人 · 舒适档）</h2>
+    <span class="sec-sub">不含往返高铁票 · 合计约 ¥2247</span>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3><span class="tick"></span>花费构成</h3>
+      <div class="budget">
+        <div class="b-row"><span class="b-name">住宿</span><div class="b-track"><div class="b-fill" style="width:27%"></div></div><span class="b-val">¥611<small>已订</small></span></div>
+        <div class="b-row"><span class="b-name">门票 / 体验</span><div class="b-track"><div class="b-fill hot" style="width:31%"></div></div><span class="b-val">¥686</span></div>
+        <div class="b-row"><span class="b-name">餐饮</span><div class="b-track"><div class="b-fill gold" style="width:33%"></div></div><span class="b-val">¥750</span></div>
+        <div class="b-row"><span class="b-name">当地交通</span><div class="b-track"><div class="b-fill" style="width:9%"></div></div><span class="b-val">¥200</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3><span class="tick"></span>门票 / 体验明细</h3>
+      <table style="font-size:14px">
+        <colgroup class="colgroup"><col><col style="width:30%"><col style="width:22%"></colgroup>
+        <thead><tr><th>项目</th><th>单价</th><th>2 人小计</th></tr></thead>
+        <tbody>
+          <tr><td>剑门关门票</td><td>¥105/人</td><td>¥210</td></tr>
+          <tr><td>猿猱道</td><td>¥68/人</td><td>¥136</td></tr>
+          <tr><td>玻璃观景台鞋套</td><td>¥10/人</td><td>¥20</td></tr>
+          <tr><td>1 号索道（往返）</td><td>¥70/人</td><td>¥140</td></tr>
+          <tr><td>皇泽寺 + 千佛崖</td><td>¥50 + ¥40/人</td><td>¥180</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--ink-soft);margin-top:10px">提示：剑门关门票跨市高铁票可享 <b>7 折</b>，或背《蜀道难》免票（一人一天一次），均须实名预约 + 身份证核销。</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 九、出发前复查清单 ===== -->
+<section id="checklist">
+  <div class="sec-head">
+    <span class="sec-no">九</span>
+    <h2 class="sec-title">出发前复查清单</h2>
+    <span class="sec-sub">三项最要紧 · 先做这三件</span>
+  </div>
+  <div class="check"><div class="flag">1</div><div class="txt"><b>住宿已订</b> —— 南河酒店 ¥611.02，10/3–10/5 两晚，已锁定。</div></div>
+  <div class="check"><div class="flag">2</div><div class="txt"><b>立即预约 10/4 剑门关门票 + 猿猱道</b> <span class="urgent">（最要紧）</span> —— 10/3 已售罄；猿猱道每日限 1200 人，每日 17:00 后约次日。</div></div>
+  <div class="check"><div class="flag">3</div><div class="txt"><b>卡准 16:00 出景区</b> <span class="urgent">（纪律）</span> —— 赶 17:43 的 D1958 返程车，错过改签成本高。</div></div>
+  <div class="check"><div class="flag">4</div><div class="txt"><b>带齐证件</b> —— 身份证、预约凭证、<b>跨市高铁票</b>（剑门关享 7 折用）。</div></div>
+  <div class="check"><div class="flag">5</div><div class="txt"><b>山区天气多变</b> —— 10/4 阵雨，带防滑鞋与雨具；雨天猿猱道可能临时关闭，备好鸟道方案。</div></div>
+  <div class="check"><div class="flag">6</div><div class="txt"><b>出行当天确认</b> —— 复查景区开放与当日天气，留意 12306 车次动态。</div></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ===== 十、画像 + 天气 ===== -->
+<section id="profile">
+  <div class="sec-head">
+    <span class="sec-no">十</span>
+    <h2 class="sec-title">出行画像 · 天气</h2>
+    <span class="sec-sub">按你的设定定制</span>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3><span class="tick"></span>本程画像（已确认）</h3>
+      <div class="profile">
+        <div class="p-item"><div class="p-ico">伴</div><div class="p-txt"><b>2 人 · 25 岁年轻情侣</b>，全程结伴同行。</div></div>
+        <div class="p-item"><div class="p-ico">适</div><div class="p-txt"><b>除住宿外舒适预算</b>，吃住行都安排得从容。</div></div>
+        <div class="p-item"><div class="p-ico">险</div><div class="p-txt"><b>想走猿猱道等强度项目</b>，已规划蜀道精华体验。</div></div>
+        <div class="p-item"><div class="p-ico">食</div><div class="p-txt"><b>无饮食忌口</b>，广元名吃放心尝。</div></div>
+        <div class="p-item"><div class="p-ico">行</div><div class="p-txt"><b>公共交通为主 · 适中节奏</b>，高铁 + 公交 + 短途打车。</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3><span class="tick"></span>天气一览</h3>
+      <div class="weather">
+        <div class="w-chip"><div class="d">10/03</div><div class="w">多云转阴<br>早间分散阵雨</div><div class="t">16~28℃</div></div>
+        <div class="w-chip"><div class="d">10/04</div><div class="w">阵雨转多云<br>山区防滑</div><div class="t">14~27℃</div></div>
+        <div class="w-chip"><div class="d">10/05</div><div class="w">多云间晴<br>体感舒适</div><div class="t">14~26℃</div></div>
+      </div>
+      <p style="font-size:13px;color:var(--ink-soft);margin-top:12px">10/4 阵雨日若猿猱道临时封闭，改走免费鸟道，行程不受大影响。</p>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ===== 寄语 ===== -->
+<div class="epilogue">
+  <p class="quote">蜀道之难，难于上青天 —— 今天你走过去了</p>
+  <p>祝这一程山河，皆是好风光。</p>
+</div>
+
+<footer>
+  <div class="seal">蜀道 · 广元</div>
+  <div>本攻略依据已购车次与酒店订单 · 景区票价与预约信息已核实 · 以实际运行为准</div>
+  <div>生成于 2026-10-02</div>
+</footer>
+
+</body>
+</html>
